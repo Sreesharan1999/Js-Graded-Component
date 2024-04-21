@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="resumepage.css">
+    <link rel="stylesheet" href="resumepage.js">
+</head>
+
+<body>
+
+    <div class="resume-container">
+
+        <h2>Applicant Resume</h2>
+
+        <button onclick="previousApplicant()" id="previousBtn" class="hide" data-action="previous">Previous</button>
+        <input type="text" id="job-search" placeholder="Search by Job">
+
+        <button onclick="searchJob()">Search</button>
+        <button onclick="nextApplicant()" id="nextBtn" class="hide" data-action="next">Next</button>
+        <button onclick="logout()" type="button">Logout</button>
+
+        <p id="search-error" style="color: red;"></p>
+        <p id="search-error-img" style="color: red;"></p>
+
+        <div class="applicant-details" id="applicant-details"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-section {
+    flex-basis: calc(30% - 10px);
+    margin-right: 10px;
+    padding-left: 5px;
+    background-color: rgb(185, 228, 255);
+}
+.right-section {
+    flex-basis: calc(68% - 10px);
+    margin-left: 10px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    background-color: lightblue;
+}
+.profile-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #003300;
+    color: #fff;
+    font-size: 48px;
+    line-height: 120px;
+    margin: 0 auto 20px;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section h2 {
+    color: #003300;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.section p, .section ul {
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+}
+.section ul {
+    padding-left: 20px;
+}
+.section ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+}
+.section p {
+    margin-bottom: 10px;
+}
+.section.work-experience p:first-child, .section.internship p:first-child {
+    font-weight: bold;
+}
+.resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.applicant-details {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.hide {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .left-section,
+    .right-section {
+        flex-basis: 100%; /* Make both sections full width on smaller screens */
+    }
+}
